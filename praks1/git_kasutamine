@@ -1,0 +1,6 @@
+root kasutajana: installisin git
+tavakasutajana: 
+1)	Määrasin kasutajanime, emaili ja editori
+2)	Lõin kataloogi, kus hakkan scriptima
+3)	sisenesin kausta, kus hakkan scriptima
+4)	tekitasin lokaalse repositooriumi git süsteemi jaoks antud kaustas

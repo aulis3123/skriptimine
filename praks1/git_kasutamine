@@ -1,4 +1,4 @@
-root kasutajana: installisin git
+	root kasutajana: installisin git
 tavakasutajana: 
 1)	Määrasin kasutajanime, emaili ja editori
 git config --global user.name (nimi)
@@ -11,7 +11,7 @@ cd skriptimine
 4)	tekitasin lokaalse repositooriumi git süsteemi jaoks antud kaustas
 git init
 
-remote seadistamine:
+	remote seadistamine:
 
 a) git remote add nimi aadress
 git remote add skriptimine https://github.com/kasutajanimi/reponimi.git
@@ -19,7 +19,7 @@ git remote add skriptimine https://github.com/kasutajanimi/reponimi.git
 b) git remote kontroll
 git remote -v
 
-põhikasutamine
+	põhikasutamine
 
 a) pane fail jälgimisele:
 git add failinimi

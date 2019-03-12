@@ -11,12 +11,6 @@ cd skriptimine
 4)	tekitasin lokaalse repositooriumi git süsteemi jaoks antud kaustas
 git init
 
-c) sisene antud kausta cd skriptimine
-cd scriptimine
-
-d) tekita lokaalne repositoorium git süsteemi jaoks antud kaustas
-git init
-
 remote seadistamine:
 
 a) git remote add nimi aadress
@@ -24,4 +18,14 @@ git remote add skriptimine https://github.com/kasutajanimi/reponimi.git
 
 b) git remote kontroll
 git remote -v
-mm
+
+põhikasutamine
+
+a) pane fail jälgimisele:
+git add failinimi
+
+b) lisa kirjelduse muudatuse kohta
+git commit -m "lühikirjelduse lause"
+
+c) lisa kaugrepositooriumi
+git push -uf skriptimine master

@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+#muljete script
+#
+echo -n "Aulis " #väljasta ilma reavaheta Aulis
+echo "Rudometov " #väljasta ilma reavaheta RUDOMETOV
+echo "Õpin ISP118 kursusel. " #väljasta reavaheta kirjutatud teksti
+echo "Tundub, et läheb hästi, kuigi jäin teistest maha." #väljastav reavaheta kirjutatud teksti
+echo "Hetkel on kõik hinded korras." #väljastab reavahega teksti
+# 
+# skripti lõpp

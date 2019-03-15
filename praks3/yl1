@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# kellaaja ja kuupäeva skript
+echo -n "Today is " #kirjutab Today is
+date +"%A, %B %d, %Y" #kirjutab praeguse päeva, kuu, kuupäevaliselt päeva ja aasta
+echo -n "Time is "
+date +"%H:%M"
+echo -n "Calendar of " #kirjutab Calendar of
+cal #tekitab kalendri
+#
+#

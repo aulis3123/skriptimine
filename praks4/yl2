@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+#Küpsise tordi arvutamine
+#
+echo "Sisesta kandiku pikkus ja laius: (cm) (cm)"
+read kandik_pikkus kandik_laius
+echo "Sisesta küpsise pikkus ja laius: (cm) (cm) "
+read kypsis_pikkus kypsis_laius
+echo "Sisesta palju kihte tuleb tordil: (kihtide arv)"
+read kiht_arv
+echo "Sisesta ühes pakis olevate küpsiste arv: (küpsiste arv)"
+read kypsis_arv
+kandik=`expr $kandik_pikkus \* $kandik_laius` #arvutab kandiku pindala
+kypsis=`expr $kypsis_pikkus \* $kypsis_laius` #arvutab küpsise pindala
+kiht=`expr $kandik \/ $kypsis` #arvutab palju on kihis küpsiseid
+tort=`expr $kiht \* $kiht_arv` #arvutab palju läheb tordi peale küpsiseid kokku
+pakke=`expr $tort \/ $kypsis_arv` #arvutab palju pakke läheb vaja, et küpsisetort valmis teha
+echo "Ostma peab $pakke pakki küpsiseid"
+#

@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+#skript küsib nime ja tervitab teda nime järgi
+#
+echo -n "Sisesta oma ees- ja perenimi: " #trükib mulle välja niiöelda infoteksti, mida ta mult tahab
+read eesnimi perenimi #asi mida pean kirjutama algul eesnimi ja siis perenimi
+echo "Tere tulemast, $eesnimi $perenimi" #tervitab mind
+#

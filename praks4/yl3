@@ -3,12 +3,12 @@
 #Bussi Korraldaja abi
 #
 echo -n "Sisestage reisijate arv grupis: "
-read reisijate_arv
+read reisijate_arv #küsib reisijate arvu
 echo -n "Sisestage bussis olevate kohtade arv: "
-read bussikohad
+read bussikohad #küsib bussi kohtade arvy
 
-Bussarv=` expr $reisijate_arv \/ $bussikohad`
-Mahajaanud=` expr $reisijate_arv \- $Bussarv \* $bussikohad`
+Bussarv=` expr $reisijate_arv \/ $bussikohad` #arvutab kui palju on busse
+Mahajaanud=` expr $reisijate_arv \- $Bussarv \* $bussikohad` #arvutab kui palju jäi täis olevatest bussidest maha
 sleep 1
 echo "Täielikult täidetud busse on $Bussarv."
 sleep 1

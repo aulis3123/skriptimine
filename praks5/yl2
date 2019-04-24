@@ -1,0 +1,21 @@
+#!/bin/bash
+#kolmnurga pindala arvutamine
+#
+echo "Sisesta kylje a vaartus: "
+read a
+echo "Sisesta kylje b vaartus: "
+read b
+echo "Sisesta kylje c vaartus: " #Kysib vajalikke väärtuseid
+read c
+p=`expr $a \+ $b \+ $c`
+p1=`expr $p \/ 2`
+s1=`expr $p1 \- $a`
+s2=`expr $p1 \- $b`
+s3=`expr $p1 \- $c`
+k1=`expr $s1 \* $s2 \* $s3`
+k2=`expr $k1 \* $p1`
+s=$(echo "$k2" | awk '{print sqrt($1)}') #arvutab pindala
+
+echo "Kolmnurga pindala on $s ruutsentimeetrit"
+
+#skripti lõpp

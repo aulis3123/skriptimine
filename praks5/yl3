@@ -1,0 +1,28 @@
+#!/bin/bash
+#
+#Reisi planeerimise skript
+#
+#
+echo "Pühapäev= 0"
+sleep 1
+echo "Esmaspäev= 1"
+sleep 1
+echo "Teisipäev= 2"
+sleep 1
+echo "Kolmapäev= 3"
+sleep 1
+echo "Neljapäev= 4"
+sleep 1
+echo "Reede= 5"
+sleep 1
+echo "Laupäev= 6"
+echo "Kuna on v2ljas6it?"
+read reisp
+echo "Mitu p2eva 2ra olete?"
+read p2evad
+a=$(($p2evad % 7))
+tagasi=$(($reisp + $a))
+echo "Tagasi j6uate paeval: $tagasi"
+#
+# skripti lõpp
+#

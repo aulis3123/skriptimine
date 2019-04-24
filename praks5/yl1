@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+#Täisnurkse kolmnurga külgede väärtused
+#
+echo "Sisesta kylje a vaartus: "
+read a_vaartus
+echo "Sisesta kyle b vaartus: "
+read b_vaartus
+
+c_ruut=` expr $a_vaartus \*  $a_vaartus \+  $b_vaartus \*  $b_vaartus`
+c_vaartus=$(echo "$c_ruut" | awk '{print sqrt($1)}')
+echo "Külje c väärtus on $c_vaartus"
+#

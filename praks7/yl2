@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+#kuu järgi aastaaeg
+echo "Sisesta kuu number"
+read kuu
+if test $kuu -eq 1 -o $kuu -eq 2 -o $kuu -eq 12
+then
+	echo "See on talve kuu"
+elif test $kuu -ge 3 -a $kuu -le 5
+then
+	echo "See on kevade kuu"
+elif test $kuu -ge 6 -a $kuu -le 8
+then
+	echo "See on suve kuu"
+elif test $kuu -ge 9 -a $kuu -le 11
+then
+	echo "See on sügise kuu"
+else
+	echo "Sellist kuud meil ei ole olemas"
+fi
+#

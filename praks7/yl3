@@ -5,16 +5,16 @@ echo "Sisesta aja väärtus tundides: "
 read aeg
 if test $aeg -ge 6 -a $aeg -le 12
 then
-	echo "Tere hommikust!"
+	echo "Tere hommikust, $USER!"
 elif test $aeg -gt 12 -a $aeg -le 18
 then
-	echo "Tere päevast!"
+	echo "Tere päevast, $USER!"
 elif test $aeg -gt 18 -a $aeg -le 22
 then
-	echo "Tere õhtust!"
+	echo "Tere õhtust, $USER!"
 elif test $aeg -ge 0 -a $aeg -le 23
 then
-	echo "Head ööd!"
+	echo "Head ööd, $USER!"
 else
 	echo "Sellist aja väärtust ei eksisteeri! "
 	echo "Aja väärtused on 0-23"

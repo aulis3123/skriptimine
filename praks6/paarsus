@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+#skript arvutab, kas arv on paaritu või paarisarv
+#
+if (( "$1" % 2 == 0 ))
+then
+echo "See on paarisarv"
+else
+echo "See on paaritu arv"
+fi 
+#

@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+#Backup programm
+#
+tar -zcf test.backup.tar test/
+gzip test.backup.tar
+mkdir backup
+mv test.backup.tar.gz /home/user/skriptimine/praks4a/backup/test.backup.tar.gz
+echo "Kataloogi /home/user/skriptimine/praks4a/test backup_i nimi on test.backup.tar.gz"
+echo "ja ta asub /home/user/skriptimine/praks4a/backup/ kataloogis."
+#

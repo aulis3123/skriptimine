@@ -2,10 +2,14 @@
 #
 #Backup programm
 #
-tar -zcf test.backup.tar test/
-gzip test.backup.tar
-mkdir backup
-mv test.backup.tar.gz /home/user/skriptimine/praks4a/backup/test.backup.tar.gz
-echo "Kataloogi /home/user/skriptimine/praks4a/test backup_i nimi on test.backup.tar.gz"
+echo "Sisesta kataloogi asukoht: "
+read kataloog
+nimi="$(basename $kataloog)"
+echo "$nimi"
+tar -zcf $nimi.backup.tar $kataloog/
+gzip $nimi.backup.tar
+mkdir /home/user/skriptimine/praks4a/backup
+mv $nimi.backup.tar.gz /home/user/skriptimine/praks4a/backup/$nimi.backup.tar.gz
+echo "Kataloogi $kataloog  backup_i nimi on $nimi.backup.tar.gz"
 echo "ja ta asub /home/user/skriptimine/praks4a/backup/ kataloogis."
 #
